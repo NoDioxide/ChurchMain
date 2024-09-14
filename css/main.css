@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    width: 100vw;
+    /*box-sizing: border-box;*/
+}
+
+.wrapper {
+    background: linear-gradient(180deg, rgba(255, 255, 255) 0%, rgba(255, 227, 227) 100%);
+}
+
+.container {
+/*    padding: 10px 0;
+    border-bottom: 1px solid #ccc;*/
+   /* top: 0;*/
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+/*    position: fixed;
+    padding: 10px 0;*/
+}
+
+/*header .logo {
+
+}*/
+/*
+calc(250px + (500 - 250) * ((100vw - 500px) / (1920 - 500)));
+*/
+
+.header_1 {
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Можно подкорректировать по желанию */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 50px; /* Отступ сверху декоративного элемента */
+    left: 20px;
+    color: white;
+    padding: 20px;
+    max-width: 50%;
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+.text-overlay h1 {
+    font-size: 2.5em; /* Заголовок */
+    margin-bottom: 15px;
+}
+
+.text-overlay p {
+    font-size: 1.1em; /* Обычный текст */
+}
+
+.decorative-element {
+    position: absolute;
+    bottom: 0; /* Позиционируем прямо на нижний край контейнера */
+    left: 0; /* Позиционируем прямо на левый край контейнера */
+    z-index: 1; /* Слой позади текста */
+    width: 300px; /* Измените размер по вашему вкусу */
+    height: 1px; /* Пропорциональная высота */
+    opacity: 0.8; /* Можно добавить прозрачность для эффекта */
+    transform: translate(-10%, 20%); /* Сдвиг для точного позиционирования */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Блок с новостном лентой */
+
+.events {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.event-card {
+    position: relative;
+    /*margin-top: 50px;
+    margin-right: 40px;*/
+    /*margin: auto;*/
+    margin-top: 30px;
+    text-align: center;
+    width: calc(250px + (500 - 250) * ((100vw - 500px) / (1920 - 500)));;;
+}
+
+.event-card img {
+    /*width: 417px;
+    height: 354px;*/
+    width: calc(200px + (417 - 217) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(200px + (354 - 254) * ((100vw - 500px) / (1920 - 500)));
+    border-radius: 15px;
+    display: block;
+}
+
+.event-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    width: calc(200px + (417 - 217) * ((100vw - 500px) / (1920 - 500)));
+    /*padding: 30px;*/
+    background: linear-gradient(to top, rgba(255,228,228) 20%, transparent 100%);
+    /*background: white;*/
+}
+
+.event-text h3 {
+    font-weight: 500;
+    font-size: calc(10px + (20 - 5) * ((100vw - 500px) / (1920 - 500)));
+    margin: calc(5px + (20 - 5) * ((100vw - 500px) / (1920 - 500)));;
+    padding: calc(4px + (16 - 4) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(150px + (300 - 150) * ((100vw - 500px) / (1920 - 500)));
+    text-align: left;
+}
+
+/*.events, .history {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.event-card, .history-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.event-card img, .history-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.event-card h3, .history-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}*/
+
+/*.events-all { !* trending *!
+    padding-top: 50px;
+}
+
+.events { !* games *!
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.events-all .events img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.event-card { !* block *!
+
+}*/
+
+/*.trending {
+    padding-top: 50px;
+}
+
+.trending h3 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .games span img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}*/
+
+/* Блок с поисковиком */
+
+.search-form{
+    border: 1px solid #0075FF;
+    border-radius: 30px;
+    display: inline-flex;
+    padding: 0 20px;
+    height: 50px;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0075FF5C;
+    /*position: absolute; right: 10%; margin-top: 30px; margin-right: 6%;
+*/
+}
+
+.search-form-txt{
+    font-family: 'Montserrat', 'sans-serif';
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+.search-form-but{
+    border: none;
+    background-color: transparent;
+}
+
+.search-form-img{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Блок с FaQ*/
+
+/*.faq-form {
+    border: 1px solid #0075FF;
+    border-radius: 30px;
+    display: inline-flex;
+    margin-top: 2%;
+    padding: 0 20px;
+    height: 50px;
+    width: 40%;
+}
+
+.faq-form-txt {
+    font-family: 'Montserrat', 'sans-serif';
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 22px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+.faq-form-but {
+    border: none;
+    background-color: transparent;
+}
+
+.faq-form-img {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}*/
+
+.accordion {
+    max-width: 800px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .question {
+    position: relative;
+    padding: 10px 30px;
+    background: #A3CDFF;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.accordion .contentBx .question::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .question::before {
+    content: "-";
+}
+
+.accordion .contentBx .answer {
+    position: relative;
+    background: #D9EAFF;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    border-radius: 20px;
+    margin-top: 3px;
+    /*margin-left: 50px;*/
+}
+
+.accordion .contentBx.active .answer {
+    height: 150px;
+    padding: 10px;
+}
+
+/* Блок с футером */
+
+/*footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #dedede;
+    border-top: 1px solid #ccc;
+}*/
+
+footer {
+    background: #ffe3e3;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display:flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #fcc;
+}
+
+footer>p {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .events, .history {
+        flex-direction: column;
+    }
+}
