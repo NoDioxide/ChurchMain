@@ -16,6 +16,16 @@ body {
     /*box-sizing: border-box;*/
 }
 
+/*
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; !* Расстояние между блоками *!
+}
+*/
+
 .wrapper {
     background: linear-gradient(180deg, rgba(255, 255, 255) 0%, rgba(255, 227, 227) 100%);
 }
@@ -380,8 +390,8 @@ nav ul li a {
     align-items: center;
     overflow: hidden;
     background-color: #0075FF5C;
-    /*position: absolute; right: 10%; margin-top: 30px; margin-right: 6%;
-*/
+    /*position: absolute; right: 10%; margin-top: 30px; margin-right: 6%;*/
+    position: absolute; right: 0; margin-right: 20px;
 }
 
 .search-form-txt {
@@ -405,6 +415,136 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+}
+
+/* Блок с постами */
+
+/*.post {
+    margin-top: 10vh;
+    max-height: 800px;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    !* background-image: url('images/display.jpg');*!
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+img.background {
+    position: absolute;
+    !* background-image: url('images/display.jpg');*!
+    width: 100%;
+    height: auto;
+    left: 0;
+    opacity: 20%;
+    z-index: -1;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.icon-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-section {
+    flex: 1;
+    !*background-image: url('images/display.jpg');*!
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-section a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-top: auto;
+}*/
+
+.blog {
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Расстояние между блоками */
+}
+
+.post {
+    max-height: 800px;
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(5px);
+    position: relative; /* Для правильной работы фона */
+}
+
+img.background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    opacity: 20%;
+    z-index: -1;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.icon-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-section a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-top: auto;
 }
 
 /* Блок с FaQ*/
@@ -448,6 +588,8 @@ nav ul li a {
 
 .accordion .contentBx {
     position: relative;
+    left: 140%;
+    margin-right: 10px;
     margin-top: 10px; /*Так должно быть, но из-за этого создается белая полоса: margin: 10px 20px;*/
     margin-left: 20px;
 }
@@ -556,5 +698,9 @@ footer>p {
 
     .card-wrapper .swiper-slide-buttons {
         display: none;
+    }
+    img.bg {
+        left: 50%;
+        margin-left: -320px;
     }
 }
