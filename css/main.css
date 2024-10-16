@@ -584,12 +584,13 @@ img.background {
 
 .accordion {
     max-width: 800px;
+    position: relative; 
 }
 
 .accordion .contentBx {
     position: relative;
     left: 140%;
-    margin-right: 10px;
+    margin-right: 10%;
     margin-top: 10px; /*Так должно быть, но из-за этого создается белая полоса: margin: 10px 20px;*/
     margin-left: 20px;
 }
@@ -607,7 +608,7 @@ img.background {
     content: "+";
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 5%;
     transform: translateY(-50%);
     font-size: 1.5em;
 }
